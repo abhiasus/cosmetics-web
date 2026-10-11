@@ -1,4 +1,3 @@
-
 :root {
   --sage: #314d3e;
   --sage-dark: #20362b;
@@ -47,10 +46,17 @@ img {
   letter-spacing: -1px;
 }
 
-.glow-navbar .navbar-brand span {
+.glow-navbar .navbar-brand span span {
   color: #a78350;
   font-family: Georgia, serif;
   font-style: italic;
+}
+
+.glow-navbar-logo {
+  height: 44px;
+  width: 44px;
+  object-fit: contain;
+  border-radius: 50%;
 }
 
 .glow-navbar .navbar-nav {
@@ -764,6 +770,11 @@ img {
 
   .glow-navbar .navbar-brand {
     font-size: 24px;
+  }
+
+  .glow-navbar-logo {
+    height: 36px;
+    width: 36px;
   }
 
   .glow-section {

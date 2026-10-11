@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { Link, NavLink, Routes, Route, useLocation } from "react-router-dom";
 
@@ -8,6 +7,8 @@ import Routine from "./components/Routine";
 import Cart from "./components/Cart";
 import About from "./components/About";
 import Contact from "./components/Contact";
+
+const logo = `${import.meta.env.BASE_URL}logo.png`;
 
 export default function App() {
   const [cart, setCart] = useState([]);
@@ -59,8 +60,18 @@ export default function App() {
     <>
       <nav className="navbar navbar-expand-lg glow-navbar sticky-top">
         <div className="container">
-          <Link className="navbar-brand" to="/">
-            Glow <span>Ritual.</span>
+          <Link
+            className="navbar-brand d-flex align-items-center gap-2"
+            to="/"
+          >
+            <img
+              src={logo}
+              alt="Glow Ritual logo"
+              className="glow-navbar-logo"
+            />
+            <span>
+              Glow <span>Ritual.</span>
+            </span>
           </Link>
 
           <button
